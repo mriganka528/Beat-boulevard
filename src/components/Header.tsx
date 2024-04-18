@@ -11,7 +11,7 @@ function Header() {
         }
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
-    }, [])
+    }, [isMobile])
     return (
 
         (isMobile === false) ? <Navbar /> : <Sidebar />
