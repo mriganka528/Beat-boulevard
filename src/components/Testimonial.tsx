@@ -65,7 +65,7 @@ const CARDS = [
         designation: "Piano Student",
         content: (
             <p>
-                The community and support at this school are unmatched. <Highlight> I've grown not just as a pianist, but also as a performer </Highlight>, thanks to their comprehensive approach.
+                The community and support at this school are unmatched. <Highlight> I&lsquo;ve grown not just as a pianist, but also as a performer </Highlight>, thanks to their comprehensive approach.
             </p>
         ),
     },
@@ -86,7 +86,7 @@ const CARDS = [
         content: (
             <p>
                 This school offered me the tools and confidence to take my singing to the next level.<Highlight>
-                    I'm endlessly grateful for the personalized coaching.</Highlight>
+                    I&lsquo;m endlessly grateful for the personalized coaching.</Highlight>
             </p>
         ),
     },

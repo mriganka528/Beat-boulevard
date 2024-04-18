@@ -9,6 +9,7 @@ import {
     MenubarSeparator,
     MenubarTrigger,
 } from "@/components/ui/menubar"
+import Image from 'next/image';
 import { Theme } from './Theme'
 function Navbar() {
     return (
@@ -16,7 +17,7 @@ function Navbar() {
 
             <div className='fixed top-0 dark:bg-slate-950/75  bg-white z-50 w-[100%] rounded-b-md round flex justify-between items-center py-4 px-7  '>
                 <Link href={'/'} as={'/'}>
-                    <img src={'/assets/logo.svg'} alt="Loading" height={'30px'} width={'30px '} />
+                    <Image src={'/assets/logo.svg'} alt="Loading" height={'30'} width={'30'} />
                 </Link>
                 <Menubar>
                     <MenubarMenu>

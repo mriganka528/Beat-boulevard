@@ -13,13 +13,13 @@ import {
 } from "@/components/ui/menubar"
 import { Theme } from "./Theme"
 import Link from "next/link"
-
+import Image from "next/image"
 export function Sidebar() {
     return (
         <>
             <div className="flex justify-between align-middle px-5 py-4" >
                 <Link href={'/'} as={'/'}>
-                    <img src={'/assets/logo.svg'} alt="Loading" height={'30px'} width={'30px'} />
+                    <Image src={'/assets/logo.svg'} alt="Loading" height={'30'} width={'30'} />
                 </Link>
                 <Sheet  >
                     <SheetTrigger asChild>
