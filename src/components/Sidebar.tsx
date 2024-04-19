@@ -17,7 +17,7 @@ import Image from "next/image"
 export function Sidebar() {
     return (
         <>
-            <div className="flex justify-between shadow-md align-middle px-5 py-4" >
+            <div className="fixed top-0 dark:bg-slate-950/80 shadow-md bg-white z-50 w-[100%] rounded-b-md round flex justify-between items-center py-4 px-5 " >
                 <Link href={'/'} as={'/'}>
                     <Image src={'/assets/logo.svg'} alt="Loading" height={'30'} width={'30'} />
                 </Link>
