@@ -3,15 +3,20 @@ import React, { FormEvent, useState } from 'react';
 import { AuroraBackground } from '@/components/ui/aurora-background';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
+import { useToast } from '@/components/ui/use-toast';
 function MusicSchoolContactUs() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
+    const { toast } = useToast()
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log('Submitted:', { email, message });
+        toast({
+            description: "Thank You for connecting with us.",
+        })
+        setEmail('');
+        setMessage('');
     };
-
     return (
         <motion.div initial={{ opacity: 0.0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -29,7 +34,7 @@ function MusicSchoolContactUs() {
                         <h1 className="text-3xl md:text-7xl text-center font-sans font-bold mb-8 dark:text-white">
                             Contact Us
                         </h1>
-                        <p className="text-neutral-500 max-w-lg mx-auto my-2 text-base text-center">
+                        <p className=" text-neutral-500 dark:text-neutral-100 max-w-lg mx-auto my-2 text-base text-center">
                             We&apos;re here to help with any questions about our courses,
                             programs, or events. Reach out and let us know how we can assist you
                             in your musical journey.
@@ -53,7 +58,7 @@ function MusicSchoolContactUs() {
                             ></textarea>
                             <div className='w-full flex justify-center'>
 
-                                <Button variant={'outline'} size={'lg'} className='text-base ring-2 ring-neutral-800 dark:text-white dark:bg-neutral-800 sm:my-4 pt-5 pb-6 ' type='submit'>Submit Here</Button>
+                                <Button variant={'outline'} size={'lg'} className='text-base ring-2 ring-neutral-800 dark:text-white dark:bg-neutral-800 sm:my-4 pt-6 pb-6 ' type='submit'  >Submit Here</Button>
                             </div>
                         </form>
                     </div>
