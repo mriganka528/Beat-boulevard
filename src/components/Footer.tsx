@@ -28,7 +28,7 @@ function Footer() {
                             <li>
                                 <Link
                                     href={'/'} as={'/'}
-                                    className="dark:hover:text-white transition-colors duration-300"
+                                    className=" hover:text-gray-950 dark:hover:text-white transition-colors duration-300"
                                 >
                                     Home
                                 </Link>
@@ -37,7 +37,7 @@ function Footer() {
                             <li>
                                 <Link
                                     href={'/courses'} as={'/courses'}
-                                    className="hover:text-white transition-colors duration-300"
+                                    className=" hover:text-gray-950 dark:hover:text-white transition-colors duration-300"
                                 >
                                     Courses
                                 </Link>
@@ -45,7 +45,7 @@ function Footer() {
                             <li>
                                 <Link
                                     href={"/contactus"} as={'/contactus'}
-                                    className="hover:text-white transition-colors duration-300"
+                                    className="hover:text-gray-950 dark:hover:text-white transition-colors duration-300"
                                 >
                                     Contact
                                 </Link>
@@ -53,23 +53,23 @@ function Footer() {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
+                        <h2 className="dark:text-white text-lg font-semibold mb-4">Follow Us</h2>
                         <div className="flex space-x-4">
                             <Link
                                 href="/"
-                                className=" dark:hover:text-black hover:text-white transition-colors duration-300"
+                                className=" hover:text-gray-950 dark:hover:text-white transition-colors duration-300"
                             >
                                 Facebook
                             </Link>
                             <Link
                                 href="/"
-                                className="dark:hover:text-black hover:text-white transition-colors duration-300"
+                                className=" hover:text-gray-950 dark:hover:text-white transition-colors duration-300"
                             >
                                 Twitter
                             </Link>
                             <Link
                                 href="/"
-                                className="dark:hover:text-black hover:text-white transition-colors duration-300"
+                                className=" hover:text-gray-950 dark:hover:text-white transition-colors duration-300"
                             >
                                 Instagram
                             </Link>
