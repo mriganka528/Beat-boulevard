@@ -2,7 +2,6 @@
 import React from "react";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 import instructors from "@/data/music_instructors.json";
-import { LampContainer } from "./ui/lamp";
 import { motion } from "framer-motion"
 import { AuroraBackground } from "./ui/aurora-background";
 interface Instructor {
