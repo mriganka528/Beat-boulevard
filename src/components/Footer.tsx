@@ -57,19 +57,19 @@ function Footer() {
                         <div className="flex space-x-4">
                             <Link
                                 href="/"
-                                className="hover:text-white transition-colors duration-300"
+                                className=" dark:hover:text-black hover:text-white transition-colors duration-300"
                             >
                                 Facebook
                             </Link>
                             <Link
                                 href="/"
-                                className="hover:text-white transition-colors duration-300"
+                                className="dark:hover:text-black hover:text-white transition-colors duration-300"
                             >
                                 Twitter
                             </Link>
                             <Link
                                 href="/"
-                                className="hover:text-white transition-colors duration-300"
+                                className="dark:hover:text-black hover:text-white transition-colors duration-300"
                             >
                                 Instagram
                             </Link>

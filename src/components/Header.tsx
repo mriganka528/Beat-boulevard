@@ -9,7 +9,6 @@ function Header() {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 700);
         }
-        setIsMobile(window.innerWidth <= 700)
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, [isMobile])
