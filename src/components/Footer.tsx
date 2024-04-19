@@ -9,12 +9,12 @@ function Footer() {
             transition={{
                 delay: 0.3,
                 duration: 0.8,
-                ease: "easeInOut",
-            }} className="dark:bg-black text-gray-400 py-16">
+                ease: "easeInOut",   
+            }} className=" dark:bg-neutral-950 dark:text-gray-400 py-16">
             <div
                 className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
                 <div>
-                    <h2 className="text-white text-lg font-semibold mb-4">About Us</h2>
+                    <h2 className="dark:text-white text-lg font-semibold mb-4">About Us</h2>
                     <p className="mb-4">
                         Music School is a premier institution dedicated to teaching the art
                         and science of music. We nurture talent from the ground up,
@@ -22,12 +22,12 @@ function Footer() {
                     </p>
                 </div>
                 <div>
-                    <h2 className="text-white text-lg font-semibold mb-4">Quick Links</h2>
+                    <h2 className=" dark:text-white text-lg font-semibold mb-4">Quick Links</h2>
                     <ul>
                         <li>
                             <Link
                                 href={'/'} as={'/'}
-                                className="hover:text-white transition-colors duration-300"
+                                className="dark:hover:text-white transition-colors duration-300"
                             >
                                 Home
                             </Link>

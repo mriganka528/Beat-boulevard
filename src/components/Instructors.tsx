@@ -4,6 +4,7 @@ import { AnimatedTooltip } from "./ui/animated-tooltip";
 import instructors from "@/data/music_instructors.json";
 import { LampContainer } from "./ui/lamp";
 import { motion } from "framer-motion"
+import { AuroraBackground } from "./ui/aurora-background";
 interface Instructor {
     id: number,
     name: string,
@@ -23,14 +24,15 @@ export function Instructor() {
                     delay: 0.3,
                     duration: 0.8,
                     ease: "easeInOut",
-                }} className=" relative">
-                <LampContainer >
+                }} className="relative">
+                <AuroraBackground>
+
                     <div className="flex flex-col justify-center items-center space-y-20 ">
                         <div>
-                            <p className="text-2xl antialiased md:text-3xl lg:text-5xl text-gray-200 font-bold inter-var text-center">
+                            <p className="text-2xl antialiased md:text-3xl lg:text-5xl dark:text-gray-200 font-bold inter-var text-center">
                                 Meet Our Instructors
                             </p>
-                            <p className="text-base md:text-lg mt-4 text-gray-200 font-normal inter-var text-center">
+                            <p className="text-base md:text-lg mt-4 dark:text-gray-200 font-normal inter-var text-center">
                                 Discover the talented professionals who will guide your musical journey
                             </p>
                         </div>
@@ -38,7 +40,7 @@ export function Instructor() {
                             <AnimatedTooltip items={music_instructor} />
                         </div>
                     </div>
-                </LampContainer>
+                </AuroraBackground >
             </motion.div>
         </>
     );

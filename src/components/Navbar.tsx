@@ -15,7 +15,7 @@ function Navbar() {
     return (
         <>
 
-            <div className='fixed top-0 dark:bg-slate-950/75  bg-white z-50 w-[100%] rounded-b-md round flex justify-between items-center py-4 px-7  '>
+            <div className='fixed top-0 dark:bg-slate-950/75 shadow-md bg-white z-50 w-[100%] rounded-b-md round flex justify-between items-center py-4 px-7  '>
                 <Link href={'/'} as={'/'}>
                     <Image src={'/assets/logo.svg'} alt="Loading" height={'30'} width={'30'} />
                 </Link>

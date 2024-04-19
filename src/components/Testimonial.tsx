@@ -14,7 +14,7 @@ export function Testimonial() {
                 <div className="max-w-2xl mx-auto p-4">
                     <div className="px-3 flex flex-col justify-center gap-y-8 sm:gap-y-7 items-center ">
                         <h2 className="text-3xl antialiased font-bold text-center z-10">Hear our Harmony: Voices of success</h2>
-                        <p className="text-center  text-teal-400 max-w-23 sm:max-w-[32rem] text-wrap text-base ">
+                        <p className="text-center font-normal dark:text-teal-400 max-w-23 sm:max-w-[32rem] text-wrap text-base ">
                             Tune into the testimonials of our users as they sing praises for our music course app. Discover how our platform has harmonized with their musical aspirations.
                         </p>
                     </div>

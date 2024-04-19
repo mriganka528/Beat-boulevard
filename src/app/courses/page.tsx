@@ -28,7 +28,7 @@ function page() {
 
             <AuroraBackground className='py-12 h-full pt-36'>
                 <h1 className="text-4xl md:text-7xl text-center font-sans font-bold mb-8 dark:text-white">All Courses({music_courses.courses.length})</h1>
-                <div className='flex justify-center flex-wrap gap-4 px-8 sm:px-0' >
+                <div className='flex justify-center flex-wrap gap-3 px-8 sm:px-0' >
                     {
                         music_courses.courses.map((course: Courses) => (
                             <CardContainer className="inter-var" key={course.id}>
